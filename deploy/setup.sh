@@ -33,7 +33,7 @@ cp $PROJECT_BASE_PATH/deploy/supervisor_profiles_api.conf /etc/supervisor/conf.d
 supervisorctl reread
 supervisorctl update
 supervisorctl restart profiles_api
-supervisorctl restart profiles_project
+
 
 # Configure nginx
 cp $PROJECT_BASE_PATH/deploy/nginx_profiles_api.conf /etc/nginx/sites-available/profiles_api.conf
